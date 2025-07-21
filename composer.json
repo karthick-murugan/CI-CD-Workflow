@@ -10,5 +10,10 @@
     "phpcs_i": "phpcs -i",
     "phpcs": "phpcs --standard=WordPressVIPMinimum sample.php",
     "phpcbf": "phpcbf --standard=WordPressVIPMinimum sample.php"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
   }
 }
