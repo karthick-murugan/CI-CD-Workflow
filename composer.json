@@ -1,0 +1,14 @@
+{
+  "name": "karthick-murugan/phpcs-test",
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.7",
+    "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+    "automattic/vipwpcs": "^3.0"
+  },
+  "scripts": {
+    "set_default": "phpcs --config-set default_standard WordPressVIPMinimum",
+    "phpcs_i": "phpcs -i",
+    "phpcs": "phpcs --standard=WordPressVIPMinimum sample.php",
+    "phpcbf": "phpcbf --standard=WordPressVIPMinimum sample.php"
+  }
+}
