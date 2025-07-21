@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<ruleset name="WordPressVIPMinimum">
+  <rule ref="WordPressVIPMinimum"/>
+  <file>sample.php</file>
+</ruleset>
