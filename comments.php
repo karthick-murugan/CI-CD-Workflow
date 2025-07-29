@@ -10,7 +10,6 @@ function __construct(){
 }
 
 
-
 function hello_world( $user ){
 echo "Hello ".$user."!";
 }
