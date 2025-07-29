@@ -2,7 +2,7 @@
   "name": "karthick-murugan/coding-standards-check",
   "description": "Sample project to check PHP_CodeSniffer in CI/CD",
   "require-dev": {
-    "automattic/vipwpcs": "^2.3",
+    "automattic/vipwpcs": "^2.3.4",
     "wp-coding-standards/wpcs": "^2.3",
     "squizlabs/php_codesniffer": "^3.7"
   },
