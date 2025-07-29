@@ -2,14 +2,21 @@
   "name": "karthick-murugan/coding-standards-check",
   "description": "Sample project to check PHP_CodeSniffer in CI/CD",
   "require-dev": {
-    "squizlabs/php_codesniffer": "^3.7",
-    "automattic/vipwpcs": "^2.3"
+    "automattic/vipwpcs": "^2.3",
+    "wp-coding-standards/wpcs": "^2.3",
+    "squizlabs/php_codesniffer": "^3.7"
   },
   "scripts": {
     "phpcs": "phpcs --standard=WordPressVIPMinimum --ignore=vendor/* .",
     "phpcbf": "phpcbf --standard=WordPressVIPMinimum --ignore=vendor/* .",
     "phpcs_i": "vendor/bin/phpcs -i",
     "set_default": "phpcs --config-set default_standard WordPressVIPMinimum"
+  },
+  "extra": {
+    "phpcodesniffer-standard": [
+      "vendor/automattic/vipwpcs",
+      "vendor/wp-coding-standards/wpcs"
+    ]
   },
   "config": {
     "allow-plugins": {
