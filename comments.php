@@ -9,7 +9,6 @@ function __construct(){
     $this->message= "Welcome to the PHPCS test!";
 }
 
-
 	
 function hello_world( $user ){
 echo "Hello ".$user."!";
