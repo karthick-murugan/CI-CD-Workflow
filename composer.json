@@ -1,4 +1,12 @@
-"scripts": {
-  "phpcs": "phpcs --standard=WordPressVIPMinimum plugin/",
-  "phpcbf": "phpcbf --standard=WordPressVIPMinimum plugin/"
+{
+  "name": "karthick-murugan/coding-standards-check",
+  "description": "Sample project to check PHP_CodeSniffer in CI/CD",
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.7"
+  },
+  "scripts": {
+    "phpcs": "phpcs --standard=WordPressVIPMinimum --ignore=vendor/* .",
+    "phpcbf": "phpcbf --standard=WordPressVIPMinimum --ignore=vendor/* .",
+    "set_default": "phpcs --config-set default_standard WordPressVIPMinimum"
+  }
 }
