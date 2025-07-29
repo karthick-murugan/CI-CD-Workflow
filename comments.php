@@ -14,7 +14,6 @@ function hello_world( $user ){
 echo "Hello ".$user."!";
 }
 
-
 public function add($a,$b){return$a+$b;}
 
 
