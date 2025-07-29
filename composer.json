@@ -10,5 +10,10 @@
     "phpcbf": "phpcbf --standard=WordPressVIPMinimum --ignore=vendor/* .",
     "phpcs_i": "vendor/bin/phpcs -i",
     "set_default": "phpcs --config-set default_standard WordPressVIPMinimum"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
   }
 }
