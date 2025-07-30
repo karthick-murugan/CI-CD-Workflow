@@ -67,7 +67,7 @@ function logicOutput($input){
 
 
 function MissingBraces($val)
-if ($val === 1) {
+if($val === 1) {
 echo "Single line";
 }   
 
