@@ -3,11 +3,11 @@ name: PHP Codesniffer
 on:
   push:
     branches:
-      - '!master'
+      - '!main'
       - '*'
   pull_request:
     branches:
-      - 'master'
+      - 'main'
 
 jobs:
   PHP-Codesniffer:
@@ -15,7 +15,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.1'
+        extensions: mbstring, xml, ctype, iconv, intl, pdo_sqlite, dom, filter, gd, iconv, json, mbstring, pdo, phar, reflection, session, simplexml, spl, standard, tokenizer, xml, xmlreader, xmlwriter, zip, zlib
+        coverage: none
 
     #- name: Validate composer.json and composer.lock
     #  run: composer validate
@@ -29,7 +36,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-php-
     - name: Install dependencies
-      run: composer install --prefer-dist --no-progress
+      run: composer install --prefer-dist --no-progress --no-interaction
 
     - name: Add VIPCS to PHPCS
       run: |
