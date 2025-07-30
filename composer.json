@@ -8,10 +8,10 @@
     "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
   },
   "scripts": {
-    "phpcs": "phpcs --standard=WordPressVIPMinimum --ignore=vendor/* .",
-    "phpcbf": "phpcbf --standard=WordPressVIPMinimum --ignore=vendor/* .",
+    "phpcs": "phpcs --standard=WordPress-Extra --ignore=vendor/* .",
+    "phpcbf": "phpcbf --standard=WordPress-Extra --ignore=vendor/* .",
     "phpcs_i": "vendor/bin/phpcs -i",
-    "set_default": "phpcs --config-set default_standard WordPressVIPMinimum",
+    "set_default": "phpcs --config-set default_standard WordPress-Extra",
     "post-install-cmd": [
       "vendor/bin/phpcs --config-set installed_paths vendor/automattic/vipwpcs,vendor/wp-coding-standards/wpcs,vendor/sirbrillig/phpcs-variable-analysis"
     ]
