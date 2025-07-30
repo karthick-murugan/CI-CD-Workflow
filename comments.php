@@ -125,6 +125,4 @@ function endsWithExtraLines(){
 }
 
 
-
-
 }
