@@ -26,7 +26,7 @@ return$result;
 
     public function loopTest(){
 for ( $i=0;$i<10;$i++ ){
-echo $i."\n";
+echo esc_html($i)."\n";
 }
     }
 
@@ -47,8 +47,8 @@ function BAD_function($Z){ return $Z * 2;}
 function TabsVsSpaces(){
 	$tabbed = "this line uses tabbing";
     $spaced    = "this line uses spaces updated";
-	echo $tabbed;
-echo $spaced;
+	echo esc_html($tabbed);
+echo esc_html($spaced);
 }
 
 function NoDocCommentFunction(){
@@ -67,7 +67,7 @@ function logicOutput($input){
 
 
 function MissingBraces($val)
-if ($val == 1) {
+if ($val === 1) {
 echo "Single line";
 }   
 
