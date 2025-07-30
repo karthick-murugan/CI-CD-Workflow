@@ -46,7 +46,7 @@ function BAD_function($Z){ return $Z * 2;}
 
 function TabsVsSpaces(){
 	$tabbed = "this line uses tabbing";
-    $spaced    = "this line uses spaces";
+    $spaced    = "this line uses spaces updated";
 	echo $tabbed;
 echo $spaced;
 }
