@@ -2,15 +2,17 @@
 
 // A sample file to trigger PHPCS and PHPCBF errors
 
-class sampleclass
+namespace App;
+
+class SampleClass
 {
-    function __construct()
+    public function __construct()
     {
         $this->message = "Welcome to the PHPCS test!";
     }
 
 
-    function hello_world($user)
+    public function helloWorld($user)
     {
         echo "Hello " . esc_html($user) . "!";
     }
@@ -21,7 +23,7 @@ class sampleclass
     }
 
 
-    function veryLongFunctionNameWithNoSpaces($first, $second, $third, $fourth, $fifth)
+    public function veryLongFunctionNameWithNoSpaces($first, $second, $third, $fourth, $fifth)
     {
         $result = $first + $second + $third + $fourth + $fifth;
         return$result;
@@ -37,7 +39,7 @@ class sampleclass
     }
 
 
-    function noVisibilitySet()
+    public function noVisibilitySet()
     {
         $x =  5;
         $y = 10;
@@ -45,22 +47,22 @@ class sampleclass
     }
 
 
-    function spacingIssue($var1, $var2)
+    public function spacingIssue($var1, $var2)
     {
         return $var1 + $var2 ;
     }
 
 
-    function badNaming1($VAL)
+    public function badNaming1($VAL)
     {
         return$VAL;
     }
-    function BAD_function($Z)
+    public function badFunction($Z)
     {
         return $Z * 2;
     }
 
-    function TabsVsSpaces()
+    public function tabsVsSpaces()
     {
         $tabbed = "this line uses tabbing";
         $spaced    = "this line uses spaces updated";
@@ -68,12 +70,12 @@ class sampleclass
         echo esc_html($spaced);
     }
 
-    function NoDocCommentFunction()
+    public function noDocCommentFunction()
     {
         return true;
     }
 
-    function inlinecontrol()
+    public function inlineControl()
     {
         if (true) {
             echo "yes";
@@ -82,7 +84,7 @@ class sampleclass
         }
     }
 
-    function logicOutput($input)
+    public function logicOutput($input)
     {
         if ($input > 5) {
             echo "Big!";
@@ -92,14 +94,14 @@ class sampleclass
     }
 
 
-    function MissingBraces($val)
+    public function missingBraces($val)
     {
         if ($val === 1) {
             echo "Single line";
         }
     }
 
-    function LongArray()
+    public function longArray()
     {
         $arr = array( 1 , 2 ,3 ,4,5  );
         return $arr;
@@ -107,23 +109,23 @@ class sampleclass
 
 
 
-    function inlineHTML()
+    public function inlineHTML()
     {
         ?><div class="warning">This is bad practice</div><?php
     }
 
-    function multipleSpaces($a, $b)
+    public function multipleSpaces($a, $b)
     {
         return $a    +     $b;
     }
 
-    function noTypeHints($x, $y)
+    public function noTypeHints($x, $y)
     {
         return$x * $y;
     }
 
 
-    function messySwitch($fruit)
+    public function messySwitch($fruit)
     {
         switch ($fruit) {
             case 'apple':
@@ -139,30 +141,30 @@ class sampleclass
     }
 
 
-    function snake_case_example($input_string)
+    public function snakeCaseExample($input_string)
     {
         return strtoupper($input_string);
     }
 
 
-    function capitalLetters($BADINPUT)
+    public function capitalLetters($BADINPUT)
     {
         return strtolower($BADINPUT);
     }
 
-    function NotCamelCase()
+    public function notCamelCase()
     {
         $MyVar = 10;
         return $MyVar;
     }
 
 
-    function endsWithSpace()
+    public function endsWithSpace()
     {
         return true;
     }
 
-    function endsWithExtraLines()
+    public function endsWithExtraLines()
     {
         return true;
     }

@@ -1,5 +1,7 @@
 <?php
 
+namespace App;
+
 class BadClass
 {
     public $unusedProperty;
