@@ -38,9 +38,12 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress --no-interaction
 
+    - name: Run Composer Installer
+      run: composer run-script post-install-cmd || true
+
     - name: Add VIPCS to PHPCS
       run: |
-        vendor/bin/phpcs --config-set installed_paths vendor/automattic/vipwpcs, vendor/wp-coding-standards/wpcs
+        vendor/bin/phpcs --config-set installed_paths vendor/automattic/vipwpcs,vendor/wp-coding-standards/wpcs
         vendor/bin/phpcs -i
     
     #- name: Run PHPCodesniffer Installer
