@@ -58,11 +58,11 @@ jobs:
     - name: PHPCS Installed Standards
       run: composer phpcs_i   
 
-    - name: PHPCBF with WordPress-Extra
-      run: vendor/bin/phpcbf --standard=WordPress-Extra --ignore="vendor/*" .
+    - name: PHPCBF with PSR12
+      run: vendor/bin/phpcbf --standard=PSR12 --ignore="vendor/*" .
     
-    - name: PHPCS with WordPress-Extra
-      run: vendor/bin/phpcs --standard=WordPress-Extra --ignore="vendor/*" .    
+    - name: PHPCS with PSR12
+      run: vendor/bin/phpcs --standard=PSR12 --ignore="vendor/*" .    
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
