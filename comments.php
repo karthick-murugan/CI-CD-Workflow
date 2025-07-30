@@ -45,7 +45,7 @@ function badNaming1($VAL){return$VAL;}
 function BAD_function($Z){ return $Z * 2;}
 
 function TabsVsSpaces(){
-	$tabbed = "this line uses tabs";
+	$tabbed = "this line uses tabbing";
     $spaced    = "this line uses spaces";
 	echo $tabbed;
 echo $spaced;
@@ -124,5 +124,5 @@ function endsWithExtraLines(){
     return true;
 }
 
- 
+
 }

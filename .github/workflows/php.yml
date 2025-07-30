@@ -43,7 +43,7 @@ jobs:
 
     - name: Add VIPCS to PHPCS
       run: |
-        vendor/bin/phpcs --config-set installed_paths vendor/automattic/vipwpcs,vendor/wp-coding-standards/wpcs
+        vendor/bin/phpcs --config-set installed_paths vendor/automattic/vipwpcs,vendor/wp-coding-standards/wpcs,vendor/sirbrillig/phpcs-variable-analysis
         vendor/bin/phpcs -i
     
     #- name: Run PHPCodesniffer Installer
