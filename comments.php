@@ -66,9 +66,10 @@ function logicOutput($input){
 }
 
 
-function MissingBraces($val)
+function MissingBraces($val){
 if($val === 1) {
 echo "Single line";
+}
 }   
 
 function LongArray(){
@@ -123,6 +124,5 @@ function endsWithSpace()
 function endsWithExtraLines(){
     return true;
 }
-
 
 }
